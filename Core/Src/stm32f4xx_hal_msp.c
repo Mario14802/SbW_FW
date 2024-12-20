@@ -581,7 +581,7 @@ void HAL_TIMEx_HallSensor_MspInit(TIM_HandleTypeDef* htimex_hallsensor)
     PA1     ------> TIM5_CH2
     PA2     ------> TIM5_CH3
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
+    GPIO_InitStruct.Pin = ENC_A_Pin|ENC_B_Pin|ENC_Z_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -713,7 +713,7 @@ void HAL_TIMEx_HallSensor_MspDeInit(TIM_HandleTypeDef* htimex_hallsensor)
     PA1     ------> TIM5_CH2
     PA2     ------> TIM5_CH3
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2);
+    HAL_GPIO_DeInit(GPIOA, ENC_A_Pin|ENC_B_Pin|ENC_Z_Pin);
 
   /* USER CODE BEGIN TIM5_MspDeInit 1 */
 

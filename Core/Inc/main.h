@@ -112,6 +112,7 @@ void Error_Handler(void);
 #define SPI_SS2_GPIO_Port GPIOC
 #define SPI_SS1_Pin GPIO_PIN_2
 #define SPI_SS1_GPIO_Port GPIOD
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -121,5 +122,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

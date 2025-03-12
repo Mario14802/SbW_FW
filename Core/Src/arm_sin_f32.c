@@ -28,9 +28,8 @@
 
 #include <stm32f4xx_hal.h>  // Sets up the correct chip specifc defines required by arm_math
 #define ARM_MATH_CM4 // TODO: might change in future board versions
-#include "arm_math.h"
-#include "arm_common_tables.h"
-
+#include "../Inc/arm_math.h"
+#include "../Inc/arm_common_tables.h"
 /**
  * @ingroup groupFastMath
  */
